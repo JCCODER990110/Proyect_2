@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>FilmLOVER</title>
+    <link rel="icon" href="https://images.vexels.com/content/205178/preview/black-film-reel-c03e8a.png" type="image/x-icon">
+    <!-- Vinculación de la hoja de estilos -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </style>
+
+  </head>
+
+  <body>
+
+    <!-- Encabezado (header) -->
+    <header>
+      <div class="header-left">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/010/286/336/small/realistic-open-movie-clapper-open-isolated-on-transparent-background-shown-slate-board-png.png" alt="Logo" class="logo"> <!-- Logo de ejemplo -->
+        <div>
+          <h1>FilmLOVER</h1>
+          <span>Acto para Cinefilos</span>
+        </div>
+      </div>
+      <div class="header-right">
+        <img src="https://images.vexels.com/content/205178/preview/black-film-reel-c03e8a.png" alt="Logo" class="logo"> <!-- Logo de ejemplo -->
+      </div>
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav>
+      <ul>
+          <li><a href="#pp">Inicio</a></li>
+          <li><a href="#movies">Películas</a></li>
+          <li><a href="#seccion-2">Últimas Noticias</a></li>
+          <li><a href="streamings.html">Streaming Top's</a></li>
+      </ul>
+    </nav>
+
+    <!-- Carrusel de imágenes -->
+
+    <div id="pp" class="carrito"></div> <!-- Nota: Preguntar porqué no funcionó el el carrusel directamente -->
+
+    <div id="carrusel" class="carousel">
+        <div class="slides">
+            <div class="slide">
+              <img src="https://preview.redd.it/nktpu7ihx0311.jpg?width=1080&crop=smart&auto=webp&s=71a839935880cf6af03d7c6c88579065b15a9192" alt="Imagen 1">
+              <div class="overlay">
+                  <h2>"La película sería una locura"</h2>
+                  <p>Robert Downey Jr. haría 'Iron Man 4' bajo esta polémica condición. El icónico Mel Gibson sería el director ...</p>
+                  <a href="https://www.sensacine.com/noticias/cine/noticia-1000113845/" target="_blank" class="btn">Leer más</a>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="https://live-production.wcms.abc-cdn.net.au/1e0b429d0afe9619a82ad412bf99c6c8?impolicy=wcms_crop_resize&cropH=2702&cropW=4053&xPos=373&yPos=0&width=862&height=575" alt="Imagen 1">
+              <div class="overlay">
+                  <h2>Paul Mescal, el héroe de 'Gladiator 2'</h2>
+                  <p>"Ni de broma entro a que me comparen con Marlon Brando, ni hablar"...</p>
+                  <a href="https://www.fotogramas.es/noticias-cine/a62907664/paul-mescal-gladiator-2-entrevista/" target="_blank" class="btn">Leer más</a>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="https://images8.alphacoders.com/137/thumb-1920-1371732.jpeg" alt="Imagen 1">
+              <div class="overlay">
+                  <h2>Vengadores: Doomsday</h2>
+                  <p>Podría añadir un personaje que lo cambia todo ...</p>
+                  <a href="https://www.cinemascomics.com/vengadores-doomsday-personaje-cambia-todo/" target="_blank" class="btn">Leer más</a>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="https://ew.com/thmb/Bk-HfWd5hCqobjQZow6ajiu9L-U=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/corenswet-1-082824-36924ab9b6cb4ae0a646b4c16f2392fb.jpg" alt="Imagen 1">
+              <div class="overlay">
+                  <h2>Novedades sobre el primer tráiler de Superman (2025)</h2>
+                  <p>Muy pronto podremos ver el tráiler de Superman (2025) de James Gunn, ya hay una fecha aproximada ...</p>
+                  <a href="https://www.cinemascomics.com/novedades-primer-trailer-de-superman-2025/" target="_blank" class="btn">Leer más</a>
+              </div>
+            </div>
+        </div>
+        <div class="carousel-buttons">
+            <button id="prevBtn">&lt;</button> <!-- Flecha izquierda -->
+            <button id="nextBtn">&gt;</button> <!-- Flecha derecha -->
+        </div>
+    </div>
+
+    <!-- Sección Películas -->
+    <section id="movies" class="section movies">
+      <h2>Nuestra Selección de Éxitos Recomendados</h2>  
+      <!-- Contenedor para las tarjetas creadas -->
+      <div id="activityContainer" class="activity-container"></div>   
+    </section>
+
+
+    <!-- Vinculación de la scrpit Javascript en html -->
+    <script src="scripts/carrusel.js"></script>
+    <script src="scripts/tempData.js"></script>
+    <script src="scripts/index.js"></script>
+
+  </body>
+
+</html>
