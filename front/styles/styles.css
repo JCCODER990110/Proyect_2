@@ -1,0 +1,78 @@
+navFondo {
+  background-color: rgb(220, 197, 46);
+}
+
+/* Personalización del navbar */
+.navbar {
+  background-color: #ffd700; /* Amarillo Hansa */
+}
+.navbar .navbar-brand, .nav-link{
+  font-family: 'Montserrat', sans-serif; /* Fuente Montserrat */
+  font-weight: 700; /* Negrita */
+  color: #000; /* Negro */
+}
+.navbar .nav-link:hover {
+  color: #fff5ee; /* Gris oscuro al pasar el mouse */
+}
+
+/* Personalización del Carousel */
+.carousel-item img{
+  width: 100%; /* Ancho 100% */
+  height: 630px; /* Altura fija de cada imagen */
+  object-fit: cover; /* Ajustar imagen para que no se deforme */
+}
+
+.carousel-caption {
+  background-color: rgba(51, 51, 51, 0.5); /* Gris Oscuro con 70% de transparencia */
+  padding: 20px;
+}
+
+.logo img {
+  margin: 0 10px 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; /* Hace el logo redondeado */
+}
+
+/* Estilo para la parte izquierda del caption */
+.carousel-caption .left-side {
+  flex: 2; /* Más amplio que la parte derecha */
+  color: #fff; /* Color blanco para el texto */
+}
+
+/* Estilo para la parte derecha del caption */
+.carousel-caption .right-side {
+  flex: 1; /* Menor ancho que la parte izquierda */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.carousel-caption h5{
+  color: #ffd700;
+  font-weight: 700;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.carousel-caption p {
+  font-style: italic;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+/* Estilo para el botón del Caption */
+.btn-ver-mas {
+  background-color: #ffd700; /* Amarillo Hansa */
+  color: #000; /* Negro */
+  border: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.btn-ver-mas:hover {
+  background-color: #f1c40f; /* Amarillo más oscuro al pasar el mouse */
+  color: #fff; /* Blanco */
+}

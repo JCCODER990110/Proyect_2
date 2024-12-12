@@ -1,0 +1,30 @@
+/* reset.css */
+
+/* Elimina los márgenes y el padding de todos los elementos */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Elimina los estilos predeterminados para listas */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Elimina los bordes y el sombreado de los formularios */
+button,
+input,
+select,
+textarea {
+    border: none;
+    outline: none;
+}
+
+/* Restablece la tipografía a un valor más neutral */
+body {
+    font-family: sans-serif;
+}

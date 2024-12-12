@@ -3,103 +3,130 @@
 
   <head>
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <title>FilmLOVER</title>
-    <link rel="icon" href="https://images.vexels.com/content/205178/preview/black-film-reel-c03e8a.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Enlace a Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlace a Google Fonts (Montserrat) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <!-- Vinculación de la hoja de estilos -->
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    </style>
+
+
+    <title>Document</title>
 
   </head>
 
-  <body>
+  <body class="bg-dark text-light"> <!-- Fondo oscuro y texto claro -->
 
-    <!-- Encabezado (header) -->
-    <header>
-      <div class="header-left">
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/010/286/336/small/realistic-open-movie-clapper-open-isolated-on-transparent-background-shown-slate-board-png.png" alt="Logo" class="logo"> <!-- Logo de ejemplo -->
-        <div>
-          <h1>FilmLOVER</h1>
-          <span>Acto para Cinefilos</span>
-        </div>
-      </div>
-      <div class="header-right">
-        <img src="https://images.vexels.com/content/205178/preview/black-film-reel-c03e8a.png" alt="Logo" class="logo"> <!-- Logo de ejemplo -->
-      </div>
-    </header>
+    <div class="container">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg mt-3">
+        <div class="container-fluid logo">
+            <!-- Título de la página -->
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/010/286/336/small/realistic-open-movie-clapper-open-isolated-on-transparent-background-shown-slate-board-png.png" alt="Logo" class="logo">
+            <a class="navbar-brand" href="#">FilmLOVER</a>
+            
+            <!-- Botón de colapso para dispositivos pequeños -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <!-- Barra de navegación -->
-    <nav>
-      <ul>
-          <li><a href="#pp">Inicio</a></li>
-          <li><a href="#movies">Películas</a></li>
-          <li><a href="#seccion-2">Últimas Noticias</a></li>
-          <li><a href="streamings.html">Streaming Top's</a></li>
-      </ul>
-    </nav>
-
-    <!-- Carrusel de imágenes -->
-
-    <div id="pp" class="carrito"></div> <!-- Nota: Preguntar porqué no funcionó el el carrusel directamente -->
-
-    <div id="carrusel" class="carousel">
-        <div class="slides">
-            <div class="slide">
-              <img src="https://preview.redd.it/nktpu7ihx0311.jpg?width=1080&crop=smart&auto=webp&s=71a839935880cf6af03d7c6c88579065b15a9192" alt="Imagen 1">
-              <div class="overlay">
-                  <h2>"La película sería una locura"</h2>
-                  <p>Robert Downey Jr. haría 'Iron Man 4' bajo esta polémica condición. El icónico Mel Gibson sería el director ...</p>
-                  <a href="https://www.sensacine.com/noticias/cine/noticia-1000113845/" target="_blank" class="btn">Leer más</a>
-              </div>
-            </div>
-            <div class="slide">
-              <img src="https://live-production.wcms.abc-cdn.net.au/1e0b429d0afe9619a82ad412bf99c6c8?impolicy=wcms_crop_resize&cropH=2702&cropW=4053&xPos=373&yPos=0&width=862&height=575" alt="Imagen 1">
-              <div class="overlay">
-                  <h2>Paul Mescal, el héroe de 'Gladiator 2'</h2>
-                  <p>"Ni de broma entro a que me comparen con Marlon Brando, ni hablar"...</p>
-                  <a href="https://www.fotogramas.es/noticias-cine/a62907664/paul-mescal-gladiator-2-entrevista/" target="_blank" class="btn">Leer más</a>
-              </div>
-            </div>
-            <div class="slide">
-              <img src="https://images8.alphacoders.com/137/thumb-1920-1371732.jpeg" alt="Imagen 1">
-              <div class="overlay">
-                  <h2>Vengadores: Doomsday</h2>
-                  <p>Podría añadir un personaje que lo cambia todo ...</p>
-                  <a href="https://www.cinemascomics.com/vengadores-doomsday-personaje-cambia-todo/" target="_blank" class="btn">Leer más</a>
-              </div>
-            </div>
-            <div class="slide">
-              <img src="https://ew.com/thmb/Bk-HfWd5hCqobjQZow6ajiu9L-U=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/corenswet-1-082824-36924ab9b6cb4ae0a646b4c16f2392fb.jpg" alt="Imagen 1">
-              <div class="overlay">
-                  <h2>Novedades sobre el primer tráiler de Superman (2025)</h2>
-                  <p>Muy pronto podremos ver el tráiler de Superman (2025) de James Gunn, ya hay una fecha aproximada ...</p>
-                  <a href="https://www.cinemascomics.com/novedades-primer-trailer-de-superman-2025/" target="_blank" class="btn">Leer más</a>
-              </div>
+            <!-- Opciones de navegación -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Películas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Últimas Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Streamings Top's</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="carousel-buttons">
-            <button id="prevBtn">&lt;</button> <!-- Flecha izquierda -->
-            <button id="nextBtn">&gt;</button> <!-- Flecha derecha -->
-        </div>
+      </nav> 
     </div>
 
-    <!-- Sección Películas -->
-    <section id="movies" class="section movies">
-      <h2>Nuestra Selección de Éxitos Recomendados</h2>  
-      <!-- Contenedor para las tarjetas creadas -->
-      <div id="activityContainer" class="activity-container"></div>   
-    </section>
+    <!-- Contenedor para el carrusel -->
+    <div class="container">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <!-- Indicadores -->
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
 
+          <!-- Slides -->
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="https://preview.redd.it/nktpu7ihx0311.jpg?width=1080&crop=smart&auto=webp&s=71a839935880cf6af03d7c6c88579065b15a9192" class="d-block w-100" alt="Slide 1">
+                  <div class="row carousel-caption d-none d-md-block">
+                    <div class="row">
+                      <div class="col-10">
+                        <h5>"La película sería una locura"</h5>
+                        <p>Robert Downey Jr. haría 'Iron Man 4' bajo esta polémica condición. El icónico <br>  Mel Gibson sería el director ...</p>
+                      </div>
+                      <div class="col-2">
+                        <a class="btn btn-ver-mas" href="https://www.sensacine.com/noticias/cine/noticia-1000113845/" target="_blank">Ver Más</a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <img src="https://media.gq.com.mx/photos/6737819880bf1789843d5737/16:9/w_2560%2Cc_limit/Paul_Mescal_Gladiador_2%2520(1).jpg" class="d-block w-100" alt="Slide 2">
+                  <div class="row carousel-caption d-none d-md-block">
+                    <div class="row">
+                      <div class="col-10">
+                        <h5>Paul Mescal, el héroe de "Gladiator 2"</h5>
+                        <p>"Ni de broma entro a que me comparen con Marlon Brando, ni hablar"...</p>
+                      </div>
+                      <div class="col-2">
+                        <a class="btn btn-ver-mas" href="https://www.fotogramas.es/noticias-cine/a62907664/paul-mescal-gladiator-2-entrevista/" target="_blank">Ver Más</a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <img src="https://images8.alphacoders.com/137/thumb-1920-1371732.jpeg"class="d-block w-100" alt="Slide 3">
+                  <div class="row carousel-caption d-none d-md-block">
+                    <div class="row">
+                      <div class="col-10">
+                        <h5>Vengadores: "Doomsday"</h5>
+                        <p>Podría añadir un personaje que lo cambia todo ...</p>
+                      </div>
+                      <div class="col-2">
+                        <a class="btn btn-ver-mas" href="https://www.cinemascomics.com/vengadores-doomsday-personaje-cambia-todo/" target="_blank">Ver Más</a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
 
-    <!-- Vinculación de la scrpit Javascript en html -->
-    <script src="scripts/carrusel.js"></script>
-    <script src="scripts/tempData.js"></script>
-    <script src="scripts/index.js"></script>
+          <!-- Controles -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+          </button>
+      </div>
+    </div>
+
+    <!-- Scripts para incorporación de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gyb1e6OelWf9W9SzxF5O5DhX2tiRl3LDI/bvLl7k5kk9ZAhF5Pp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0v8FqgA9jFEhbo3rF5XtrHhS9vD5/eW7L3E7JDo2p8ih+Fbc" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
   </body>
-
 </html>
